@@ -1,0 +1,13 @@
+.AddItem{
+    width: 88%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+.AddItem form {
+    width: 93%
+}
+.AddItem input {
+    width: 94%
+}
+

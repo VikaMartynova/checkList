@@ -1,0 +1,20 @@
+.createList{
+    width: 80%;
+    margin: 5px auto;
+
+}
+label{
+    padding: auto 5px;
+    word-break: break-all;
+}
+
+.createList li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.createList label {
+    margin: auto auto;
+    font-style: italic;
+}

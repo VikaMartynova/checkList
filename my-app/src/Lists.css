@@ -1,0 +1,49 @@
+.Lists button{
+    padding: 5px 0;
+    margin: 10px;
+    min-width: 40vw;
+    border-radius: 10px;
+}
+.Items li{
+    font-style: italic;
+    padding: 5px;
+}
+.NameList {
+    text-decoration: underline;
+}
+/*
+li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.Lists li{
+    justify-content: space-around;
+    padding: 5px 0;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.Lists li button {
+    border: none;
+    background-color: inherit;
+    color:black;
+    font-size: 24px;
+    min-width: 100%;
+}
+button::after{
+    border: none;
+}
+
+.Lists li:hover{
+    background-color: grey;
+}
+
+
+.Items label{
+    padding-left: 20px;
+}
+input[type=checkbox]:checked + label{
+    text-decoration: line-through;
+}*/

@@ -1,0 +1,40 @@
+body{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.CheckApp {
+  min-height: 90vh;
+  margin: 10px auto;
+  width: 70vw;
+  text-align: center;
+  background-color: antiquewhite;
+}
+.Title {
+  padding: 20px;
+}
+.Menu {
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+button {
+  background-color: powderblue;
+  border-radius: 10%;
+  font-size: 17px;
+}
+input {
+  font-size: 17px;
+}
+.menuBtn {
+  min-width: 60%;
+  margin: 20px auto;
+  font-size: 24px;
+  padding: 10px;
+}
+ul {
+  list-style: none;
+  padding: 10px;
+}
+
+
