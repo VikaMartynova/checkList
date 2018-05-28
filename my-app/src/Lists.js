@@ -14,7 +14,13 @@ class Lists extends Component {
         this.toggle = this.toggle.bind(this);
 
     }
-
+    componentDidMount() {
+        this.unsubscribe = this.props.store.subscribe(() =>
+            this.forceUpdate());
+    }
+    componentWillUnmount() {
+        this.unsubscribe();
+    }
     viewList(list) {
         return (
             <li key={list.id}>

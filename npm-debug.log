@@ -14,7 +14,7 @@
 5 verbose stack     at ReadFileContext.callback (/usr/share/npm/node_modules/graceful-fs/graceful-fs.js:76:16)
 5 verbose stack     at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:367:13)
 6 verbose cwd /home/viktoria/WebstormProjects/tocheck
-7 error Linux 4.13.0-41-generic
+7 error Linux 4.13.0-43-generic
 8 error argv "/usr/bin/node" "/usr/bin/npm" "start"
 9 error node v6.11.4
 10 error npm  v3.5.2
