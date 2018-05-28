@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0240123-8fa6-439f-ade9-213c581e90c2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/Lists.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Lists.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/npm-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/npm-debug.log" afterDir="false" />
-    </list>
+    <list default="true" id="e0240123-8fa6-439f-ade9-213c581e90c2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -148,7 +144,7 @@
       <path value="$PROJECT_DIR$/my-app/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="2110" />
     <option name="y" value="156" />
     <option name="width" value="994" />
@@ -248,16 +244,15 @@
       <workItem from="1526666978257" duration="1497000" />
       <workItem from="1526898844172" duration="11029000" />
       <workItem from="1527157044085" duration="987000" />
-      <workItem from="1527493411832" duration="388000" />
+      <workItem from="1527493411832" duration="901000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="281064000" />
+    <option name="totallyTimeSpent" value="281577000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-2" width="1920" height="1082" extended-state="7" />
-    <editor active="true" />
+    <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15076436" />
       <window_info anchor="bottom" id="TODO" order="6" />
