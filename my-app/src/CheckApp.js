@@ -5,7 +5,6 @@ import Lists from './Lists';
 import { connect} from 'react-redux';
 import {addList, exit, back, deleteItem, toggleItem} from "./actions";
 
-
 const Title = () => {
         return(
             <h1>
@@ -13,7 +12,6 @@ const Title = () => {
             </h1>
         )
 };
-
 class CheckApp extends Component {
     constructor(props) {
         super(props);
@@ -30,7 +28,6 @@ class CheckApp extends Component {
             isView: false,
         };
     }
-
     handleCreateClick(){
         this.setState({isCreate: true});
     }
@@ -56,7 +53,6 @@ class CheckApp extends Component {
         }
         this.inputRef.current.value='';
         list.preventDefault();
-
     }
     delete(id) {
 
@@ -69,7 +65,6 @@ class CheckApp extends Component {
             toggleItem(id)
         );
     }
-
     render() {
         const {isCreate, isView} = this.state;
         const {store} = this.props;
@@ -81,7 +76,6 @@ class CheckApp extends Component {
                 </div>
             );
         };
-
         const App = isCreate || isView ? (
             isCreate ?
                 (
@@ -95,7 +89,6 @@ class CheckApp extends Component {
                     </div>
                 ) :
                 (
-
                     <div>
                         <Lists store={store} delete={this.delete} toggle={this.toggle}/>
                         <button className='Add' type='submit' onClick={this.handleBackClick}>Lists</button>
@@ -103,7 +96,6 @@ class CheckApp extends Component {
                     </div>
                 )
             ) : <Menu/>;
-
         return (
             <div className='container'>
                 <div className='CheckApp'>
@@ -121,6 +113,5 @@ const mapStateToProps = (store) => {
         lists: store.appState.lists
     };
 };
-
 export default connect(mapStateToProps)(CheckApp);
 
