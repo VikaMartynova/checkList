@@ -115,4 +115,3 @@ const mapStateToProps = (store) => {
 };
 export default connect(mapStateToProps)(CheckApp);
 
-//for add commit
