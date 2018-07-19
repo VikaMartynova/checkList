@@ -32,11 +32,13 @@ function listReducer (state = [], action) {
 
         case DELETE_ITEM:
             list.items = state.filter((item) => {return item.id !== action.id});
-            console.log(list.items);
             return state.filter((item) => {return item.id !== action.id});
         case ADD_LIST:
             return [];
         case TOGGLE:
+            list.items = list.items.map(item =>
+                (item.id === action.id) ? {...item, completed: !item.completed} :
+                    item);
             return state.map(item =>
                 (item.id === action.id) ? {...item, completed: !item.completed} :
                     item);
@@ -65,8 +67,10 @@ function checkAppReducer (state = initialState, action) {
             return Object.assign({}, state, {
                 activeIndex: action.id} );
         case TOGGLE:
-           state.lists[state.activeIndex].items =
-                listReducer(state.lists[state.activeIndex].items, action);
+            if (state.activeIndex !== -1) {
+                state.lists[state.activeIndex].items =
+                    listReducer(state.lists[state.activeIndex].items, action);
+            }
             return state;
 
         case DELETE_ITEM:

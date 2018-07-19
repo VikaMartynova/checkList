@@ -20,8 +20,6 @@ class Items extends Component{
     }
 
     createItem(item) {
-        console.log(item.id, item.completed, item.text);
-
         return (
             <li key={item.id}>
                <label onClick={() => {this.toggle(item.id)}}

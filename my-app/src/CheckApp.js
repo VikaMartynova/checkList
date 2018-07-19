@@ -80,7 +80,7 @@ class CheckApp extends Component {
             isCreate ?
                 (
                     <div>
-                        <List store={store} delete={this.delete}/>
+                        <List store={store} delete={this.delete} toggle={this.toggle}/>
                         <form onSubmit={this.add} className='CreateList'>
                             <input ref={this.inputRef} placeholder='Name of list' tabIndex={2}/>
                             <button className='Add' type='submit'>Add list</button>

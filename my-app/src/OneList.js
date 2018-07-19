@@ -12,6 +12,7 @@ export class List extends Component {
         this.inputRef = React.createRef();
         this.add = this.add.bind(this);
         this.delete = this.delete.bind(this);
+        this.toggle = this.toggle.bind(this);
 
     }
     add(element) {
@@ -22,6 +23,9 @@ export class List extends Component {
         this.inputRef.current.value ='';
         element.preventDefault();
     }
+    toggle(id) {
+        this.props.toggle(id);
+    }
 
     delete(id) {
         this.props.delete(id);
@@ -30,6 +34,7 @@ export class List extends Component {
     render(){
        const items = this.props.store.getState().listState;
         const deleteItem = this.delete;
+        const toggleItems = this.toggle;
         return(
             <div className='List'>
                 <div className='AddItem'>
@@ -38,7 +43,7 @@ export class List extends Component {
                         <button type='submit' >+</button>
                     </form>
                 </div>
-                <Items entries={items}  delete={deleteItem}/>
+                <Items entries={items}  delete={deleteItem} toggle={toggleItems}/>
             </div>
         );
     }
